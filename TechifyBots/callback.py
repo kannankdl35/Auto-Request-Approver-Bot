@@ -20,10 +20,10 @@ async def callback_query_handler(client, query: CallbackQuery):
         await query.message.edit_caption(
             caption=text.HELP.format(query.from_user.mention),
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton('📢 𝖴𝗉𝖽𝖺𝗍𝖾𝗌', url='https://telegram.me/Techifybots'),
-                 InlineKeyboardButton('💬 𝖲𝗎𝗉𝗉𝗈𝗋𝗍', url='https://telegram.me/TechifySupport')],
-                [InlineKeyboardButton('↩️ 𝖡𝖺𝖼𝗄', callback_data="start"),
-                 InlineKeyboardButton('❌ 𝖢𝗅𝗈𝗌𝖾', callback_data="close")]
+                [InlineKeyboardButton('📢 𝘊𝘩𝘢𝘯𝘯𝘦𝘭', url='https://telegram.me/cinemagram_links'),
+                 InlineKeyboardButton('💬 𝘚𝘶𝘱𝘱𝘰𝘳𝘵', url='https://telegram.me/CMG_4dmin')],
+                [InlineKeyboardButton('↩️ 𝘉𝘢𝘤𝘬', callback_data="start"),
+                 InlineKeyboardButton('❌ 𝘊𝘭𝘰𝘴𝘦', callback_data="close")]
             ])
         )
 
@@ -31,9 +31,9 @@ async def callback_query_handler(client, query: CallbackQuery):
         await query.message.edit_caption(
             caption=text.ABOUT,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton('👨‍💻 𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋 👨‍💻', user_id=int(ADMIN))],
-                [InlineKeyboardButton("↩️ 𝖡𝖺𝖼𝗄", callback_data="start"),
-                 InlineKeyboardButton("❌ 𝖢𝗅𝗈𝗌𝖾", callback_data="close")]
+                [InlineKeyboardButton('👨‍💻 𝘋𝘦𝘷𝘦𝘭𝘰𝘱𝘦𝘳 👨‍💻', url='https://telegram.me/CMG_4dmin')],
+                [InlineKeyboardButton("↩️ 𝘉𝘢𝘤𝘬", callback_data="start"),
+                 InlineKeyboardButton("❌ 𝘊𝘭𝘰𝘴𝘦", callback_data="close")]
             ])
         )
 
